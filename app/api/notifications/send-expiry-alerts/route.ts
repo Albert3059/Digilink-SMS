@@ -60,10 +60,8 @@ export async function POST(request: Request) {
           subject: `Subscription Expiring Soon: ${subscription.client_name} (${daysUntilExpiry} days)`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                <div style="text-align: center; margin-bottom: 30px;">
-                  <img src="${embeddedLogo || (logoUrl ? `${logoUrl}/digilink-logo.png` : '/digilink-logo.png')}" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
-                </div>
               <h2 style="color: #1e3a8a;">Subscription Expiring Soon</h2>
+              <p style="font-weight:600; margin-top:6px;">Digilink IT Subscription Management System</p>
               <p>This subscription will expire within the next 30 days.</p>
               <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #f97316;">
                 <p><strong>Client:</strong> ${subscription.client_name}</p>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
+import { formatCurrency } from "@/lib/format";
 import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -83,7 +84,7 @@ export default function SubscriptionDetail({ subscription }: SubscriptionDetailP
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Price</p>
-                <p className="font-medium">{subscription.price ? `$${subscription.price.toFixed(2)}` : "N/A"}</p>
+                <p className="font-medium">{subscription.price ? formatCurrency(subscription.price) : "N/A"}</p>
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Start Date</p>

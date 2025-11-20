@@ -120,6 +120,46 @@ async function sendEmail(options) {
 }
 const __TURBOPACK__default__export__ = sendEmail;
 }),
+"[externals]/fs [external] (fs, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("fs", () => require("fs"));
+
+module.exports = mod;
+}),
+"[externals]/path [external] (path, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("path", () => require("path"));
+
+module.exports = mod;
+}),
+"[project]/lib/logo.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__,
+    "getEmbeddedLogoDataUrl",
+    ()=>getEmbeddedLogoDataUrl
+]);
+var __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/fs [external] (fs, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/path [external] (path, cjs)");
+;
+;
+function getEmbeddedLogoDataUrl() {
+    try {
+        const publicPath = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(process.cwd(), "public", "digilink-logo.png");
+        if (!__TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].existsSync(publicPath)) return null;
+        const buffer = __TURBOPACK__imported__module__$5b$externals$5d2f$fs__$5b$external$5d$__$28$fs$2c$__cjs$29$__["default"].readFileSync(publicPath);
+        const base64 = buffer.toString("base64");
+        // assume PNG; change if you keep a different format
+        return `data:image/png;base64,${base64}`;
+    } catch (error) {
+        // fail silently and let callers fallback
+        return null;
+    }
+}
+const __TURBOPACK__default__export__ = getEmbeddedLogoDataUrl;
+}),
 "[project]/app/api/reports/send-subscription-report/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -129,6 +169,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/server.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$email$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/email.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$logo$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/logo.ts [app-route] (ecmascript)");
+;
 ;
 ;
 async function POST(request) {
@@ -177,6 +219,9 @@ async function POST(request) {
         });
         // Resolve logo URL (use deployed site URL if available, otherwise fall back to public root)
         const logoUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "";
+        const embedLogo = process.env.EMBED_LOGO_IN_EMAILS === "true";
+        const embeddedLogo = embedLogo ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$logo$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getEmbeddedLogoDataUrl"])() : null;
+        const logoSrc = embeddedLogo || (logoUrl ? logoUrl + "/digilink-logo.png" : "/digilink-logo.png");
         // Generate HTML report
         const reportHtml = `
       <!DOCTYPE html>
@@ -205,7 +250,7 @@ async function POST(request) {
       <body>
         <div class="container">
             <div class="logo">
-        
+            <img src="${logoSrc}" alt="Digilink IT Subscription Management System" style="max-width: 300px; height: auto;" />
           </div>
           
           <div class="header">
@@ -330,4 +375,4 @@ async function POST(request) {
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__b657dfbd._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__1000d588._.js.map

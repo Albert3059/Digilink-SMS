@@ -7,6 +7,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { createClient } from "@/lib/supabase/client"
 import { useRouter } from "next/navigation"
+import { formatCurrency } from "@/lib/format"
 
 interface Subscription {
   id: string
@@ -130,7 +131,7 @@ export default function SubscriptionsTable({ subscriptions }: TableProps) {
                 </Badge>
               </TableCell>
               <TableCell className="text-sm">
-                {subscription.price ? `$${subscription.price.toFixed(2)}` : "-"}
+                {subscription.price ? formatCurrency(subscription.price) : "-"}
               </TableCell>
               <TableCell className="text-right">
                 <div className="flex gap-2 justify-end">

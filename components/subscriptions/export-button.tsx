@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Download } from 'lucide-react';
+import { formatCurrency } from "@/lib/format";
 
 interface ExportButtonProps {
   subscriptions: any[];
@@ -36,7 +37,8 @@ export default function ExportButton({ subscriptions }: ExportButtonProps) {
       sub.start_date || "",
       sub.end_date || "",
       sub.renewal_date || "",
-      sub.price || "",
+      // Format price as ZAR for CSV human-readability
+      sub.price != null && sub.price !== "" ? formatCurrency(sub.price) : "",
       sub.notes || "",
     ]);
 

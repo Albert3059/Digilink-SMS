@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import sendEmail from "@/lib/email"
 import { getEmbeddedLogoDataUrl } from "@/lib/logo"
+import { formatCurrency } from "@/lib/format"
 
 export async function POST(request: Request) {
   try {
@@ -77,10 +78,6 @@ export async function POST(request: Request) {
       </head>
       <body>
         <div class="container">
-            <div class="logo">
-            <img src="${logoSrc}" alt="Digilink IT Subscription Management System" style="max-width: 300px; height: auto;" />
-          </div>
-          
           <div class="header">
             <h1>Subscription Report</h1>
             <p>${companyName || "Digilink IT Subscription Management System"}</p>
@@ -101,9 +98,9 @@ export async function POST(request: Request) {
               <div class="stat-value">${expiredSubscriptions}</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">Total Revenue</div>
-              <div class="stat-value">$${totalRevenue.toFixed(2)}</div>
-            </div>
+                <div class="stat-label">Total Revenue</div>
+                <div class="stat-value">${formatCurrency(totalRevenue)}</div>
+              </div>
           </div>
 
           <h2>Upcoming Renewals (Next 30 Days)</h2>
@@ -127,7 +124,7 @@ export async function POST(request: Request) {
                     <td>${sub.client_name}</td>
                     <td>${sub.subscription_type}</td>
                     <td>${new Date(sub.renewal_date).toLocaleDateString()}</td>
-                    <td>$${Number.parseFloat(sub.price).toFixed(2)}</td>
+                    <td>${formatCurrency(Number.parseFloat(sub.price) || 0)}</td>
                   </tr>
                 `,
                   )
@@ -158,7 +155,7 @@ export async function POST(request: Request) {
                   <td>${sub.subscription_type}</td>
                   <td><span class="status ${sub.status}">${sub.status}</span></td>
                   <td>${new Date(sub.end_date).toLocaleDateString()}</td>
-                  <td>$${Number.parseFloat(sub.price).toFixed(2)}</td>
+                  <td>${formatCurrency(Number.parseFloat(sub.price) || 0)}</td>
                 </tr>
               `,
                 )

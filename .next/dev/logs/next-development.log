@@ -1,20 +1,19 @@
-[00:00:01.272] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.520] Server  LOG      ✓ Ready in 1086ms
-[00:00:09.371] Server  LOG      ○ Compiling / ...
-[00:00:10.573] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:01.302] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.478] Server  LOG      ✓ Ready in 1113ms
+[00:00:03.861] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:11.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.235] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+[00:00:04.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.381] Browser WARN    Image with src "http://localhost:3001/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:10.468] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:24.685] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+[00:00:10.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.629] Browser WARN    Image with src "http://localhost:3001/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.927] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:26.237] Browser WARN    Image with src "http://localhost:3000/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:31.072] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+[00:00:18.411] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:36.961] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /settings. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:44.587] Browser LOG     [v0] Sending report with 1 subscriptions
-[00:00:45.784] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+[00:00:21.886] Browser LOG     [v0] Sending report with 2 subscriptions
+[00:00:23.083] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
 Package prettier can't be external
 The request prettier/plugins/html matches serverExternalPackages (or the default list).
 The request could not be resolved by Node.js from the project directory.
@@ -22,7 +21,7 @@ Packages that should be external need to be installed in the project directory, 
 Try to install it into the project directory by running npm install prettier from the project directory.
 
 
-[00:00:45.785] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+[00:00:23.085] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
 Package prettier can't be external
 The request prettier/standalone matches serverExternalPackages (or the default list).
 The request could not be resolved by Node.js from the project directory.
@@ -30,33 +29,23 @@ Packages that should be external need to be installed in the project directory, 
 Try to install it into the project directory by running npm install prettier from the project directory.
 
 
-[00:00:45.981] Server  LOG     [v0] Report API called
-[00:00:45.984] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
-[00:00:46.094] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
-[00:00:47.392] Server  LOG     [v0] Email sent successfully: {}
-[00:00:49.177] Browser LOG     [v0] Report response: {"data":{"data":{"id":"9619746b-c8e6-4895-881f-d2fd5d432865"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b1840ce9206df-CPT","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 21:38:32 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"9","x-resend-monthly-quota":"9"}},"message":"Report sent successfully"}
-[00:00:52.630] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+[00:00:23.280] Server  LOG     [v0] Report API called
+[00:00:23.284] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:00:23.306] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:00:24.743] Server  LOG     [v0] Email sent successfully: {}
+[00:00:26.429] Browser LOG     [v0] Report response: {"data":{"data":{"id":"bc649e2e-49c0-4c99-bb90-020d9f48a218"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b4c55de9106db-CPT","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 22:14:05 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"17","x-resend-monthly-quota":"17"}},"message":"Report sent successfully"}
+[00:05:10.683] Server  LOG      ✓ Compiled in 141ms
+[00:41:06.696] Server  LOG      ✓ Compiled in 207ms
+[00:07:23.513] Server  LOG      ✓ Compiled in 114ms
+[00:43:19.475] Server  LOG      ✓ Compiled in 107ms
+[00:08:00.002] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:03:36.334] Server  LOG      ✓ Compiled in 77ms
-[00:03:42.567] Server  LOG      ✓ Compiled in 100ms
-[00:03:48.411] Server  LOG      ✓ Compiled in 66ms
-[00:03:49.409] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+[00:08:00.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:01.397] Browser WARN    Image with src "http://localhost:3001/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:29.969] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:03:53.190] Server  LOG        Reload env: .env.local
-[00:03:53.702] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:04:05.307] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:05:00.128] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:05:02.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:02.348] Browser WARN    Image with src "/digilink-logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:05:02.348] Browser WARN    Image with src "http://localhost:3000/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:06.260] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:05:09.437] Browser LOG     [v0] Sending report with 1 subscriptions
-[00:05:09.722] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+[00:08:32.520] Browser LOG     [v0] Sending report with 4 subscriptions
+[00:08:32.797] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
 Package prettier can't be external
 The request prettier/plugins/html matches serverExternalPackages (or the default list).
 The request could not be resolved by Node.js from the project directory.
@@ -64,7 +53,7 @@ Packages that should be external need to be installed in the project directory, 
 Try to install it into the project directory by running npm install prettier from the project directory.
 
 
-[00:05:09.723] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+[00:08:32.798] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
 Package prettier can't be external
 The request prettier/standalone matches serverExternalPackages (or the default list).
 The request could not be resolved by Node.js from the project directory.
@@ -72,8 +61,88 @@ Packages that should be external need to be installed in the project directory, 
 Try to install it into the project directory by running npm install prettier from the project directory.
 
 
-[00:05:09.849] Server  LOG     [v0] Report API called
-[00:05:09.851] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
-[00:05:09.855] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
-[00:05:11.120] Server  LOG     [v0] Email sent successfully: {}
-[00:05:13.335] Browser LOG     [v0] Report response: {"data":{"data":{"id":"644a9ea7-ee1e-4535-a964-d7c7057804cd"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b1eb0eca60720-CPT","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 21:42:56 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"10","x-resend-monthly-quota":"10"}},"message":"Report sent successfully"}
+[00:08:32.863] Server  LOG     [v0] Report API called
+[00:08:32.865] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:08:32.901] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:08:34.490] Server  LOG     [v0] Email sent successfully: {}
+[00:08:37.151] Browser LOG     [v0] Report response: {"data":{"data":{"id":"489790a6-ac1c-4a43-81ae-19bc88c2f1fa"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b584a8e6d73ba-JNB","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 22:22:15 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"18","x-resend-monthly-quota":"18"}},"message":"Report sent successfully"}
+[00:13:30.178] Browser LOG     [v0] Sending report with 4 subscriptions
+[00:13:30.652] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/plugins/html matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:13:30.653] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/standalone matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:13:30.663] Server  LOG     [v0] Report API called
+[00:13:30.665] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:13:30.666] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:13:31.712] Server  LOG     [v0] Email sent successfully: {}
+[00:13:32.868] Browser LOG     [v0] Report response: {"data":{"data":{"id":"4766312c-693e-4f25-b21d-48615bfe3c42"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b5f8d5dd493d0-JNB","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 22:27:12 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"19","x-resend-monthly-quota":"19"}},"message":"Report sent successfully"}
+[00:15:11.064] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:15:14.654] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:15:17.391] Browser LOG     [v0] Sending report with 1 subscriptions
+[00:15:17.597] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/plugins/html matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:15:17.599] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/standalone matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:15:17.611] Server  LOG     [v0] Report API called
+[00:15:17.614] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:15:17.615] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:15:18.094] Server  LOG     [v0] Email sent successfully: {}
+[00:15:19.549] Browser LOG     [v0] Report response: {"data":{"data":{"id":"6c93242a-1fb7-4072-88f3-5902b6883dc3"},"error":null,"headers":{"cf-cache-status":"DYNAMIC","cf-ray":"9a1b622a293c8a34-JNB","connection":"keep-alive","content-encoding":"br","content-type":"application/json","date":"Thu, 20 Nov 2025 22:28:58 GMT","ratelimit-limit":"2","ratelimit-policy":"2;w=1","ratelimit-remaining":"1","ratelimit-reset":"1","server":"cloudflare","transfer-encoding":"chunked","x-resend-daily-quota":"20","x-resend-monthly-quota":"20"}},"message":"Report sent successfully"}
+[00:16:05.956] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:08.079] Server  ERROR   Error: fetch failed
+    at context.fetch (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\node_modules\.pnpm\next@16.0.3_react-dom@19.2.0_react@19.2.0__react@19.2.0\node_modules\next\dist\server\web\sandbox\context.js:322:60)
+    at C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:565:23
+    at _handleRequest (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:919:24)
+    at _request (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:906:24)
+    at C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4129:295
+    at SupabaseAuthClient._useSession (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4001:26)
+    at async SupabaseAuthClient._getUser (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4114:20)
+    at async C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4101:20
+    at async C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink-SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:3949:28 {
+  
+}
+[00:16:08.414] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:08.721] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:12.122] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:12.590] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:17.058] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:19.122] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:22.152] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:24.836] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:16:28.016] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

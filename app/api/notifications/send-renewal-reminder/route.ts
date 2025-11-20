@@ -79,11 +79,9 @@ export async function POST(request: Request) {
           subject: `Subscription Renewal Reminder: ${subscription.client_name} - ${daysUntilRenewal} days`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <div style="text-align: center; margin-bottom: 30px;">
-                <img src="${logoSrc}" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
-              </div>
-              <h2 style="color: #1e3a8a;">Subscription Renewal Reminder</h2>
-              <p>A subscription renewal is coming up soon.</p>
+                    <h2 style="color: #1e3a8a;">Subscription Renewal Reminder</h2>
+                      <p style="font-weight:600; margin-top:6px;">Digilink IT Subscription Management System</p>
+                      <p>A subscription renewal is coming up soon.</p>
               <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #3b82f6;">
                 <p><strong>Client:</strong> ${subscription.client_name}</p>
                 <p><strong>Subscription Type:</strong> ${subscription.subscription_type}</p>
