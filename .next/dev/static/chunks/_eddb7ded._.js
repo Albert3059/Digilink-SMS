@@ -941,8 +941,16 @@ function ReportButton({ subscriptions = [], adminEmail, companyName }) {
                     companyName: companyName || "Digilink IT Subscription Management System"
                 })
             });
-            const data = await response.json();
-            console.log("[v0] Report response:", data);
+            let data = null;
+            try {
+                data = await response.json();
+                console.log("[v0] Report response (json):", data);
+            } catch (parseErr) {
+                // Non-JSON response (e.g., HTML error). Read text for debugging.
+                const text = await response.text();
+                console.warn("[v0] Report response not JSON; status:", response.status, "body:", text);
+                throw new Error(`Server responded ${response.status}: ${text.slice(0, 200)}`);
+            }
             if (!response.ok) {
                 throw new Error(data.error || "Failed to send report");
             }
@@ -963,14 +971,14 @@ function ReportButton({ subscriptions = [], adminEmail, companyName }) {
                 className: "w-4 h-4 mr-2"
             }, void 0, false, {
                 fileName: "[project]/components/subscriptions/report-button.tsx",
-                lineNumber: 51,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             sending ? "Sending..." : "Email Report"
         ]
     }, void 0, true, {
         fileName: "[project]/components/subscriptions/report-button.tsx",
-        lineNumber: 50,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }

@@ -30,8 +30,16 @@ export default function ReportButton({ subscriptions = [], adminEmail, companyNa
         }),
       })
 
-      const data = await response.json()
-      console.log("[v0] Report response:", data)
+      let data: any = null
+      try {
+        data = await response.json()
+        console.log("[v0] Report response (json):", data)
+      } catch (parseErr) {
+        // Non-JSON response (e.g., HTML error). Read text for debugging.
+        const text = await response.text()
+        console.warn("[v0] Report response not JSON; status:", response.status, "body:", text)
+        throw new Error(`Server responded ${response.status}: ${text.slice(0, 200)}`)
+      }
 
       if (!response.ok) {
         throw new Error(data.error || "Failed to send report")
