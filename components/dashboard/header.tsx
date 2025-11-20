@@ -27,9 +27,9 @@ export default function DashboardHeader({ admin, user }: HeaderProps) {
     <header className="border-b border-border bg-background">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/dashboard" className="flex items-center gap-3">
-          <Image 
+            <Image 
             src="/digilink-logo.png" 
-            alt="Digilink IT Solutions" 
+            alt="Digilink IT Subscription Management System" 
             width={180}
             height={40}
             className="h-10 w-auto"

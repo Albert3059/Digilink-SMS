@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/notifications/send-expiry-alerts/route": "/api/notifications/send-expiry-alerts",
+  "/api/notifications/send-renewal-reminder/route": "/api/notifications/send-renewal-reminder",
+  "/api/reports/send-subscription-report/route": "/api/reports/send-subscription-report",
+  "/auth/login/page": "/auth/login",
+  "/auth/signup-success/page": "/auth/signup-success",
+  "/auth/signup/page": "/auth/signup",
+  "/dashboard/page": "/dashboard",
+  "/page": "/",
+  "/settings/page": "/settings",
+  "/subscriptions/[id]/edit/page": "/subscriptions/[id]/edit",
+  "/subscriptions/[id]/page": "/subscriptions/[id]",
+  "/subscriptions/new/page": "/subscriptions/new",
+  "/subscriptions/page": "/subscriptions"
+}

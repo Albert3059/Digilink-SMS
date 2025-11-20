@@ -1,0 +1,3 @@
+{
+  "/api/notifications/send-renewal-reminder/route": "app/api/notifications/send-renewal-reminder/route.js"
+}

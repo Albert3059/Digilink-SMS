@@ -70,13 +70,13 @@ export async function POST(request: Request) {
       </head>
       <body>
         <div class="container">
-          <div class="logo">
-            <img src="/images/fulllogo.png" alt="Digilink IT Solutions" />
+            <div class="logo">
+            <img src="/images/fulllogo.png" alt="Digilink IT Subscription Management System" />
           </div>
           
           <div class="header">
             <h1>Subscription Report</h1>
-            <p>${companyName || "Digilink IT Solutions"}</p>
+            <p>${companyName || "Digilink IT Subscription Management System"}</p>
             <p>Generated on ${new Date().toLocaleDateString()}</p>
           </div>
 
@@ -160,7 +160,7 @@ export async function POST(request: Request) {
           </table>
 
           <div class="footer">
-            <p>This is an automated report from Digilink IT Solutions Subscription Management System</p>
+            <p>This is an automated report from Digilink IT Subscription Management System</p>
             <p style="font-size: 12px; margin-top: 10px;">Connecting You to the Digital World</p>
           </div>
         </div>

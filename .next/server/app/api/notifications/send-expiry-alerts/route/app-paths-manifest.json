@@ -1,0 +1,3 @@
+{
+  "/api/notifications/send-expiry-alerts/route": "app/api/notifications/send-expiry-alerts/route.js"
+}

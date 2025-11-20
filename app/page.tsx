@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex items-center">
             <Image
               src="/digilink-logo.png"
-              alt="Digilink IT Solutions"
+              alt="Digilink IT Subscription Management System"
               width={200}
               height={45}
               className="h-12 w-auto"

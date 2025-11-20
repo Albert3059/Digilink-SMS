@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/notifications/send-expiry-alerts/route": "app/api/notifications/send-expiry-alerts/route.js",
+  "/api/notifications/send-renewal-reminder/route": "app/api/notifications/send-renewal-reminder/route.js",
+  "/api/reports/send-subscription-report/route": "app/api/reports/send-subscription-report/route.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/auth/signup-success/page": "app/auth/signup-success/page.js",
+  "/auth/signup/page": "app/auth/signup/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/page": "app/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/subscriptions/[id]/edit/page": "app/subscriptions/[id]/edit/page.js",
+  "/subscriptions/[id]/page": "app/subscriptions/[id]/page.js",
+  "/subscriptions/new/page": "app/subscriptions/new/page.js",
+  "/subscriptions/page": "app/subscriptions/page.js"
+}

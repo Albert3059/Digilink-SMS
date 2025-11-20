@@ -13,7 +13,7 @@ async function sleep(ms: number) {
 }
 
 export async function sendEmail(options: SendEmailOptions) {
-  const from = options.from || process.env.EMAIL_FROM || "Digilink IT Solutions <info@digilinkict.co.za>";
+  const from = options.from || process.env.EMAIL_FROM || "Digilink IT Subscription Management System <info@digilinkict.co.za>";
   const maxRetries = options.maxRetries ?? 3;
 
   let attempt = 0;

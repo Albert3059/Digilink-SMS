@@ -26,7 +26,7 @@ export default function ReportButton({ subscriptions = [], adminEmail, companyNa
         body: JSON.stringify({
           subscriptions: subscriptions || [],
           adminEmail: adminEmail || "admin@digilink.com",
-          companyName: companyName || "Digilink IT Solutions",
+          companyName: companyName || "Digilink IT Subscription Management System",
         }),
       })
 
