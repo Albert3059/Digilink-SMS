@@ -74,7 +74,7 @@ export async function POST(request: Request) {
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
               <div style="text-align: center; margin-bottom: 30px;">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fulllogo-mOQT2tMeyjnDurVpajl9RZRGkVfbQd.png" alt="Digilink IT Solutions" style="max-width: 250px; height: auto;" />
+                <img src="/images/fulllogo.png" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
               </div>
               <h2 style="color: #1e3a8a;">Subscription Renewal Reminder</h2>
               <p>A subscription renewal is coming up soon.</p>
