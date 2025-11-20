@@ -7,12 +7,25 @@ export async function POST(request: Request) {
   try {
     console.log("[v0] Report API called")
 
+    // Basic env checks (do not log secrets)
+    console.log(
+      `[v0] Env: RESEND_API_KEY=${process.env.RESEND_API_KEY ? "present" : "missing"}, EMAIL_FROM=${process.env.EMAIL_FROM ? "present" : "missing"}, NEXT_PUBLIC_SITE_URL=${process.env.NEXT_PUBLIC_SITE_URL ? "present" : "missing"}, EMBED_LOGO_IN_EMAILS=${process.env.EMBED_LOGO_IN_EMAILS}`,
+    )
+
     if (!process.env.RESEND_API_KEY) {
       console.error("[v0] RESEND_API_KEY is not configured")
       return NextResponse.json({ error: "Email service not configured" }, { status: 500 })
     }
 
-    const { subscriptions, adminEmail, companyName } = await request.json()
+    let body: any = {}
+    try {
+      body = await request.json()
+    } catch (err: any) {
+      console.error("[v0] Failed to parse request body:", err?.message || err)
+      return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 })
+    }
+
+    const { subscriptions, adminEmail, companyName } = body
 
     if (!subscriptions || !Array.isArray(subscriptions)) {
       console.error("[v0] Invalid subscriptions data")
@@ -48,8 +61,18 @@ export async function POST(request: Request) {
     // Resolve logo URL (use deployed site URL if available, otherwise fall back to public root)
     const logoUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || ""
     const embedLogo = process.env.EMBED_LOGO_IN_EMAILS === "true"
-    const embeddedLogo = embedLogo ? getEmbeddedLogoDataUrl() : null
+    let embeddedLogo: string | null = null
+    if (embedLogo) {
+      try {
+        embeddedLogo = getEmbeddedLogoDataUrl()
+      } catch (logoErr: any) {
+        console.error("[v0] Failed to embed logo:", logoErr?.message || logoErr)
+        embeddedLogo = null
+      }
+    }
     const logoSrc = embeddedLogo || (logoUrl ? logoUrl + "/digilink-logo.png" : "/digilink-logo.png")
+
+    console.log(`[v0] Report: subscriptions=${subscriptions.length}, upcomingRenewals=${upcomingRenewals.length}, admin=${adminEmail}`)
 
     // Generate HTML report
     const reportHtml = `
