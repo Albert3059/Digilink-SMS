@@ -71,7 +71,7 @@ export async function POST(request: Request) {
       <body>
         <div class="container">
             <div class="logo">
-            <img src="/images/fulllogo.png" alt="Digilink IT Subscription Management System" />
+            <img src="/digilink-logo.png" alt="Digilink IT Subscription Management System" />
           </div>
           
           <div class="header">
