@@ -1,0 +1,169 @@
+[00:00:01.254] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.430] Server  LOG      ✓ Ready in 1009ms
+[00:00:10.301] Server  ERROR   [v0] Supabase URL or Anon Key is not configured. Skipping authentication middleware.
+[00:00:13.330] Server  LOG      ○ Compiling / ...
+[00:00:15.384] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:15.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.108] Server  ERROR   [v0] Supabase URL or Anon Key is not configured. Skipping authentication middleware.
+[00:00:42.369] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/signup. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:01.713] Browser ERROR   unhandledRejection: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+[00:01:33.630] Server  ERROR   [v0] Supabase URL or Anon Key is not configured. Skipping authentication middleware.
+[00:01:33.706] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:33.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:35.966] Server  ERROR   [v0] Supabase URL or Anon Key is not configured. Skipping authentication middleware.
+[00:01:36.875] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:50.296] Browser ERROR   unhandledRejection: Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+[00:05:12.029] Server  LOG        Reload env: .env.local
+[00:05:12.284] Server  ERROR   [v0] Supabase URL or Anon Key is not configured. Skipping authentication middleware.
+[00:05:12.571] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:19.431] Server  LOG        Reload env: .env.local
+[00:05:19.943] Server  LOG      ✓ Compiled in 475ms
+[00:05:20.952] Server  ERROR   AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:876:11)
+    at async _handleRequest (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:926:9)
+    at async _request (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:906:18)
+    at async (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4766:24)
+    at async (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:635:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+[00:05:20.954] Server  ERROR   AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:876:11)
+    at async _handleRequest (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:926:9)
+    at async _request (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:906:18)
+    at async (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:4766:24)
+    at async (C:\Users\p.mkwanazi\OneDrive - Assupol Group\Documents\GitHub\Digilink SMS\.next\dev\server\edge\chunks\2ca13_@supabase_auth-js_dist_module_3a29ae0a._.js:635:36) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+[00:05:21.155] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:38.027] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:38.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:42.538] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:44.601] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/signup. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:00.125] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/signup-success. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:07:18.299] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:07:18.784] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:53.800] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:03.056] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:04.807] Browser WARN    Image with src "http://localhost:3000/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:13.542] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:18.268] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /settings. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:30.321] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:35.092] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:08:39.036] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions/new. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:10.676] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:10:07.874] Browser LOG     [v0] Sending report with 1 subscriptions
+[00:10:10.857] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/plugins/html matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:10:10.858] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/standalone matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:10:11.172] Server  LOG     [v0] Report API called
+[00:10:11.177] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:10:11.300] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:10:12.571] Server  ERROR   [v0] Resend API error: {}
+[00:10:31.502] Browser LOG     [v0] Report response: {"error":"Failed to send email: You can only send testing emails to your own email address (apmkhwanazi@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain."}
+[00:10:31.502] Browser ERROR   [v0] Error sending report: Failed to send email: You can only send testing emails to your own email address (apmkhwanazi@gmail.com). To send emails to other recipients, please verify a domain at resend.com/domains, and change the `from` address to an email using this domain.
+[00:17:52.120] Server  LOG        Reload env: .env.local
+[00:17:53.346] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:18:03.795] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:19:45.762] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:19:46.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:48.065] Browser WARN    Image with src "http://localhost:3000/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:19:49.895] Browser LOG     [v0] Sending report with 1 subscriptions
+[00:19:50.316] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/plugins/html matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:19:50.317] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/standalone matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:19:50.378] Server  LOG     [v0] Report API called
+[00:19:50.379] Server  LOG     [v0] Preparing report for: "albert@digilinkict.co.za"
+[00:19:50.380] Server  LOG     [v0] Sending email to: "albert@digilinkict.co.za"
+[00:19:50.800] Server  LOG     [v0] Email sent successfully: "a5ec2652-0c5b-408f-9c65-d1d33db764af"
+[00:19:56.231] Browser LOG     [v0] Report response: {"emailId":"a5ec2652-0c5b-408f-9c65-d1d33db764af","message":"Report sent successfully"}
+[00:20:02.738] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /settings. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:20:51.635] Browser ERROR   Error uploading logo: {"message":"Bucket not found","name":"StorageApiError","status":400,"statusCode":"404"}
+[00:27:22.487] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /auth/login. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:34:39.089] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/plugins/html matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:34:39.091] Server  WARN     ⚠ ./node_modules/.pnpm/@react-email+render@2.0.0_r_47c774b32dd99f3802fdd0de4bd06d91/node_modules/@react-email/render/dist/node
+Package prettier can't be external
+The request prettier/standalone matches serverExternalPackages (or the default list).
+The request could not be resolved by Node.js from the project directory.
+Packages that should be external need to be installed in the project directory, so they can be resolved from the output files.
+Try to install it into the project directory by running npm install prettier from the project directory.
+
+
+[00:35:37.577] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:35:50.369] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:35:50.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:52.111] Browser WARN    Image with src "http://localhost:3000/digilink-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:35:58.055] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:36:03.745] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /subscriptions. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
