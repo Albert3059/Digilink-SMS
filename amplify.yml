@@ -3,14 +3,16 @@ applications:
   - appRoot: .
     frontend:
       config:
-        packageManager: npm
+        packageManager: pnpm
       phases:
         preBuild:
           commands:
-            - npm ci
+            - corepack enable
+            - corepack prepare pnpm@latest --activate
+            - pnpm install --frozen-lockfile
         build:
           commands:
-            - npm run build
+            - pnpm build
       artifacts:
         # For Next.js SSR/Server-side build artifacts
         baseDirectory: .next
