@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 import sendEmail from "@/lib/email";
+import { getEmbeddedLogoDataUrl } from "@/lib/logo";
 
 export async function POST(request: Request) {
   try {
@@ -42,6 +43,9 @@ export async function POST(request: Request) {
     const failedEmails = [];
 
     // Send emails using Resend and create alert records
+      const logoUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || "";
+      const embedLogo = process.env.EMBED_LOGO_IN_EMAILS === "true";
+      const embeddedLogo = embedLogo ? getEmbeddedLogoDataUrl() : null;
     for (const subscription of newNotifications) {
       try {
         const adminEmail = subscription.admins?.email || "";
@@ -56,9 +60,9 @@ export async function POST(request: Request) {
           subject: `Subscription Expiring Soon: ${subscription.client_name} (${daysUntilExpiry} days)`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-              <div style="text-align: center; margin-bottom: 30px;">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fulllogo-mOQT2tMeyjnDurVpajl9RZRGkVfbQd.png" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
-              </div>
+                <div style="text-align: center; margin-bottom: 30px;">
+                  <img src="${embeddedLogo || (logoUrl ? `${logoUrl}/digilink-logo.png` : '/digilink-logo.png')}" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
+                </div>
               <h2 style="color: #1e3a8a;">Subscription Expiring Soon</h2>
               <p>This subscription will expire within the next 30 days.</p>
               <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #f97316;">

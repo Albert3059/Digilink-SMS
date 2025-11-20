@@ -1,6 +1,7 @@
 import { createClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 import sendEmail from "@/lib/email";
+import { getEmbeddedLogoDataUrl } from "@/lib/logo";
 
 export async function POST(request: Request) {
   try {
@@ -67,6 +68,11 @@ export async function POST(request: Request) {
           continue;
         }
 
+        const logoUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || ""
+        const embedLogo = process.env.EMBED_LOGO_IN_EMAILS === "true"
+        const embeddedLogo = embedLogo ? getEmbeddedLogoDataUrl() : null
+        const logoSrc = embeddedLogo || (logoUrl ? logoUrl + "/digilink-logo.png" : "/digilink-logo.png")
+
         const emailResult = await sendEmail({
           from: process.env.EMAIL_FROM,
           to: adminEmail,
@@ -74,7 +80,7 @@ export async function POST(request: Request) {
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
               <div style="text-align: center; margin-bottom: 30px;">
-                <img src="/images/fulllogo.png" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
+                <img src="${logoSrc}" alt="Digilink IT Subscription Management System" style="max-width: 250px; height: auto;" />
               </div>
               <h2 style="color: #1e3a8a;">Subscription Renewal Reminder</h2>
               <p>A subscription renewal is coming up soon.</p>

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import sendEmail from "@/lib/email"
+import { getEmbeddedLogoDataUrl } from "@/lib/logo"
 
 export async function POST(request: Request) {
   try {
@@ -43,6 +44,12 @@ export async function POST(request: Request) {
       return renewalDate >= today && renewalDate <= thirtyDaysFromNow
     })
 
+    // Resolve logo URL (use deployed site URL if available, otherwise fall back to public root)
+    const logoUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL || ""
+    const embedLogo = process.env.EMBED_LOGO_IN_EMAILS === "true"
+    const embeddedLogo = embedLogo ? getEmbeddedLogoDataUrl() : null
+    const logoSrc = embeddedLogo || (logoUrl ? logoUrl + "/digilink-logo.png" : "/digilink-logo.png")
+
     // Generate HTML report
     const reportHtml = `
       <!DOCTYPE html>
@@ -71,7 +78,7 @@ export async function POST(request: Request) {
       <body>
         <div class="container">
             <div class="logo">
-            <img src="/digilink-logo.png" alt="Digilink IT Subscription Management System" />
+            <img src="${logoSrc}" alt="Digilink IT Subscription Management System" style="max-width: 300px; height: auto;" />
           </div>
           
           <div class="header">
