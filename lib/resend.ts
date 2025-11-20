@@ -1,5 +1,16 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let _resend: Resend | null = null;
 
-export default resend;
+export function getResend(): Resend {
+	if (_resend) return _resend
+
+	if (!process.env.RESEND_API_KEY) {
+		throw new Error("RESEND_API_KEY is not configured")
+	}
+
+	_resend = new Resend(process.env.RESEND_API_KEY)
+	return _resend
+}
+
+export default getResend

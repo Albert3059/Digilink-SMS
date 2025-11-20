@@ -1,4 +1,4 @@
-import resend from "./resend";
+import { getResend } from "./resend";
 
 type SendEmailOptions = {
   from?: string;
@@ -21,6 +21,7 @@ export async function sendEmail(options: SendEmailOptions) {
 
   while (attempt <= maxRetries) {
     try {
+      const resend = getResend()
       const result = await resend.emails.send({
         from,
         to: options.to,
@@ -55,6 +56,11 @@ export async function sendEmail(options: SendEmailOptions) {
   }
 
   return { success: false, error: lastError };
+}
+
+export async function POST(request: Request) {
+  const body = await request.json();
+  return sendEmail(body);
 }
 
 export default sendEmail;
