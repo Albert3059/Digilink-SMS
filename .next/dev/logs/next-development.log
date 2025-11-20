@@ -147,3 +147,4 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [00:16:28.016] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [01:20:43.136] Server  LOG      ✓ Compiled in 414ms
+[01:42:31.497] Server  LOG      ✓ Compiled in 312ms

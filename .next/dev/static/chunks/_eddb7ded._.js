@@ -941,18 +941,18 @@ function ReportButton({ subscriptions = [], adminEmail, companyName }) {
                     companyName: companyName || "Digilink IT Subscription Management System"
                 })
             });
+            // Read the response body as text once, then try to parse JSON.
+            const respText = await response.text();
             let data = null;
             try {
-                data = await response.json();
-                console.log("[v0] Report response (json):", data);
+                data = respText ? JSON.parse(respText) : null;
+                console.log("[v0] Report response (parsed):", data);
             } catch (parseErr) {
-                // Non-JSON response (e.g., HTML error). Read text for debugging.
-                const text = await response.text();
-                console.warn("[v0] Report response not JSON; status:", response.status, "body:", text);
-                throw new Error(`Server responded ${response.status}: ${text.slice(0, 200)}`);
+                console.warn("[v0] Report response not JSON; status:", response.status, "body:", respText);
             }
             if (!response.ok) {
-                throw new Error(data.error || "Failed to send report");
+                const errMsg = data?.error || respText || "Failed to send report";
+                throw new Error(errMsg);
             }
             alert(data.message || "Report sent successfully!");
         } catch (error) {
