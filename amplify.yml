@@ -12,9 +12,8 @@ applications:
             - pnpm install --frozen-lockfile
         build:
           commands:
-            - pnpm build
+            - pnpm build           # build Next.js app
       artifacts:
-        # For Next.js SSR/Server-side build artifacts
         baseDirectory: .next
         files:
           - '**/*'
